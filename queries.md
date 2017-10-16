@@ -157,13 +157,13 @@ Sometimes you may need to use a raw expression in a query. These expressions wil
                          ->groupBy('status')
                          ->get();
 
-Or the `selectRaw`method:
+Or the `selectRaw` method:
 ```
 $users = DB::table('users')
-                         ->selectRaw('count(*) as user_count, status')
-                         ->where('status', '<>', 1)
-                         ->groupBy('status')
-                         ->get();
+                     ->selectRaw('count(*) as user_count, status')
+                     ->where('status', '<>', 1)
+                     ->groupBy('status')
+                     ->get();
 
 ```
 <a name="joins"></a>
