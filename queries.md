@@ -164,7 +164,6 @@ $users = DB::table('users')
                      ->where('status', '<>', 1)
                      ->groupBy('status')
                      ->get();
-
 ```
 <a name="joins"></a>
 ## Joins
